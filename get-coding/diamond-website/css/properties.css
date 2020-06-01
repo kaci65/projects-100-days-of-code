@@ -1,0 +1,21 @@
+/* .part-1{
+  color:green;
+  font-size:18px;
+  text-align:center;
+}
+.part-2{
+  width:75%;
+  height:100px;
+  background-color:lightblue;
+  margin:20px;
+}
+.part-3{
+  float:right;
+  border:6px dotted red;
+  padding:20px;
+} */
+.text{
+  text-align:center;
+  font-size:18px;
+  background-color:aqua;
+}
