@@ -1,0 +1,171 @@
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 16em;
+    height: 100vh;
+}
+
+.nav-item {
+    margin-top: 0.5em;
+    border-top: 1px solid #000;
+    padding-top: 0.5em;
+    margin-left: -23px;
+    text-align: left;
+    list-style-type: none;
+    color: #011F5B;
+    /* text-align: left; */
+}
+
+.nav-item:hover {
+  opacity: 0.7;
+}
+
+a:link {
+  text-decoration: none ;
+}
+
+.container {
+    max-width: 65%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#main-doc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+}
+
+
+#heading-main {
+    font-size: 110%;
+    margin-top: 2em;
+    margin-left: 7px;
+    color: #1B1B1B;
+}
+
+.headings {
+    font-size: 130%;
+    margin: 1em 0;
+    color: #353839;
+}
+
+.headings {
+    margin: 1em 0;
+}
+
+p {
+    line-height: 1.2em;
+    /* margin-top: 1em; */
+}
+
+.content-points {
+    list-style-type: none;
+}
+
+p,
+.content-points {
+    color: #000000;
+    margin-top: 1em;
+}
+
+#scrabblepages {
+   color: #4d4da1;
+}
+
+@media screen and (max-width: 1350px) {
+    #heading-main {
+        font-size: 120%;
+}
+#navbar {
+    width: 12%;
+}
+
+#main-doc {
+    width: 60em;
+    margin: 0 auto;
+}
+
+.main-section {
+    font-size: 90%;
+}
+
+@media screen and (max-width: 1150px) {
+    #navbar {
+        font-size: 95%;
+    }
+
+    #heading-main {
+        font-size: 110%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #main-doc {
+        width: 50em;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #main-doc {
+        width: 40em;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    #navbar {
+        width: 5em;
+    }
+
+    #main-doc {
+    margin-left: 2em;
+    }
+
+    .topic-headings {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    #main-doc {
+        width: 35em;
+        margin: 0 auto;
+    }
+
+    #heading-main {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    #main-doc {
+        width: 20em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    #main-doc {
+        width: 25em;
+        margin: 0 auto 0 2em;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    #main-doc {
+        width: 25em;
+        margin: 0 auto 0 1em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    p,
+    .content-points {
+        font-size: 75%;
+        width: 20em;
+        margin: 0 auto;
+    }
+}
