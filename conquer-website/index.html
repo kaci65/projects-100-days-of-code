@@ -20,7 +20,7 @@
 	<div class="container">
 		<main id="main-doc">
 
-			<!-- Homepage -->
+			<!-- Section 1 Homepage -->
 			<section class="main-section" id="homepage">
 				<img src="img/bg-1.jpg" alt="dirt road in autumn">
 				<div class="centered">
@@ -29,7 +29,7 @@
 				</div>
 			</section>
 
-			<!-- About us -->
+			<!-- Section 2 About us -->
 			<section class="main-section" id="about-us">
 				<div class="card">
 					<img src="img/1-1.jpg" alt="autumn sky">
@@ -53,7 +53,7 @@
 				</div>	
 			</section>
 
-			<!-- Two columns -->
+			<!-- Section 3 Two columns -->
 			<section class="main-section" id="main-feature">
 				<div class="feature">
 					<img src="img/2-1.jpg" alt="smoky glass">
@@ -70,11 +70,11 @@
 
 					<p class="feature-content">Vestibulum vel mauris at erat mattis accumsan et ac lorem. Cras non venenatis orci, sed tincidunt massa. Duis nisl lectus, auctor eu sodales at, dignissim eu orci. Sed vitae venenatis magna, in blandit metus.</p>
 
-					<button class="white-btn">Read More</button>
+					<button class="feature-btn">Read More</button>
 				</div>
 			</section>
 
-			<!-- Services -->
+			<!-- Section 4 Services -->
 			<section class="main-section" id="services">
 				<img src="img/bg-2.jpg" alt="foggy mountains">
 				<div class="middle">
@@ -82,7 +82,7 @@
 					<p class="middle-text">Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia. Etiam a mi quis arcu varius condimentum.</p>
 			</section>
 
-			<!-- Four Columns -->
+			<!-- Section 5 Four Columns -->
 			<section class="main-section" id="four-parts">
 				<div class="parts">
 					<img src="img/4-1.jpg" alt="lake view">
@@ -94,7 +94,7 @@
 					<img src="img/4-2.jpg" alt="snowy peak">
 					<h4 class="parts-title grey-text">Column Two</h4>
 					<p class="parts-text">Ut ac odio scelerisque ante ornare commodo. Sed faucibus dui libero, in tincidunt purus pretium quis.</p>
-					<button class="white-btn">Read It</button>	
+					<button class="partTwo-btn">Read It</button>	
 				</div>
 
 				<div class="parts">
@@ -107,11 +107,11 @@
 					<img src="img/4-4.jpg" alt="autumn leaves">
 					<h4 class="parts-title grey-text">Column Three</h4>
 					<p class="parts-text">Ut ac odio scelerisque ante ornare commodo. Sed faucibus dui libero, in tincidunt purus pretium quis.</p>
-					<button class="white-btn">Details</button>	
+					<button class="partFour-btn">Details</button>	
 				</div>	
 			</section>
 
-			<!-- One Big Column -->
+			<!-- Section 6 One Big Column -->
 			<section class="main-section" id="big-column">
 				<div class="column">
 					<img src="img/4-5.jpg" alt="lifesaver deck">
@@ -119,32 +119,47 @@
 					<p class="column-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus sem euismod. Donec iaculis tristique odio at consectetur. Nullam dignissim varius suscipit. Sed in leo sit amet velit finibus pretium. Vivamus dictum nisi ac fermentum interdum. Vestibulum vel mauris at erat mattis accumsan et ac lorem. Cras non venenatis orci, sed tincidunt massa. Duis nisl lectus, auctor eu sodales at, dignissim eu orci. Sed vitae venenatis magna, in blandit metus. Praesent volutpat cursus rhoncus. Aenean arcu diam, suscipit ac neque in, sollicitudin convallis orci.</p>
 
 					<p class="column-info">Fusce eu porta massa, sed tincidunt turpis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus a urna tellus. Integer pharetra vitae nisi et lacinia. Morbi sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna, ornare ac scelerisque quis, maximus eget nisi.</p>
-					<button class="white-btn">Read More</button>
+					<button class="column-btn">Read More</button>
 				</div>
 			</section>
 
-			<!-- Contact Form -->
+			<!-- Section 7 Contact Form -->
 			<section>
 				<section class="main-section" id="contact">
 				<img src="img/bg-3.jpg" alt="road at sunset">
-				<!-- <div class="form-center"> -->
-					<form action="/action_page.php" class="myForm">
-						<h2>Contact Form</h2>
-						<p>Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia. Etiam a mi quis arcu varius condimentum.</p>
+					<form action="#" method="post" class="myForm">
+						<div class="form-text">
+							<h2 class="h3-form">Contact Form</h2>
+							<p class="p-form">Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id felis ligula. In euismod libero at magna dapibus, in rutrum velit lacinia. Etiam a mi quis arcu varius condimentum.</p>
+						</div>
 
-						<input type="text" placeholder="Name">
-						<input type="text" placeholder="Email">
-						<input type="text" placeholder="Subject">
-						<input type="text" placeholder="Your message here">
-						<button type="submit" class="btn">Send</button>
+						<div class="contact-form-left">
+							<div class="input-group>">
+								<input name="name" type="text" id="name" class="form-control" placeholder="Name">
+								<input name="email" type="email" id="mail" class="form-control" placeholder="Email">
+								<input name="subject" type="text" id="subject" class="form-control" placeholder="Subject">
+							</div>
+						</div>
+
+						<div class="contact-form-right">
+							<div class="input-group">
+								<textarea name="message" id="comment" rows="6" maxlength="3000" class="form-control" placeholder="Your message here"></textarea>
+								<button type="submit" class="conq-btn">Send</button>
+							</div>
+						</div>
 					</form>
 			</section>
-			
+
+			<!-- Section 8 Footer -->
 			<section class="main-section" id="footer">
-					<h4 class="foot-title">Use if free!</h4>
-					<p class="foot-text">“Conquer is free Bootstrap template from templatemo website.
+					<h4 class="foot-title">Use it's free!</h4>
+					<p class="foot-text">“Conquer is free Bootstrap template from templatemo website.<br>
 					No backlink is required to use this layout.”</p>
-					<p class="rights">Copyright & 2084 Your Company Name | Design: templatemo</p>
+
+					<hr>
+
+					<p class="rights">Copyright &copy 2084 Your Company Name | Design: templatemo</p>
+				</div>	
 			</section>
 		</div>
 	</div>
