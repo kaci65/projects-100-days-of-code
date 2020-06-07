@@ -1,0 +1,40 @@
+body{
+  margin:0px;
+  /* background-color:beige; */
+}
+.pad{
+  padding:25px;
+}
+.header{
+  background-color:lightblue;
+  color:green;
+  height:80px;
+  font-size:36px;
+  text-align:center;
+}
+.welcome{
+  background-color:plum;
+  color:white;
+  font-size:16px;
+  text-align:center;
+  height:40px;
+  margin-top:-16px;
+}
+.main-text{
+  width:60%;
+  float:left;
+  background-color:beige;
+}
+.divs{
+  margin:20px;
+  width:25%;
+  float:left;
+  border:4px solid lightblue;
+  text-align:center;
+}
+.team-pic{
+  height:150px;
+}
+.diamond-pic{
+width:150px;
+}
