@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap');
+
+body{
+  background-image: url("https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_960_720.jpg");
+  max-width:100%
+  height:auto;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #333;
+  font-family: 'Inconsolata', monospace;
+}
+
+#title{
+  text-align: center;
+  font-size:40px;
+  text-transform: uppercase;
+}
+
+#image{
+  max-width:100%;
+  height:auto;
+  object-fit: cover;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 10px;
+}
+
+#img-caption{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.info-wrapper{
+  /* height:350px;
+  max-width:72%;
+  align-items: center; */
+}
+
+#tribute-info p{
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap:break-word;
+  word-break: break-all;
+  overflow:hidden;
+  font-size:17px;
+  line-height: 1.6;
+  padding-bottom: 10px;
+}
+
+#tribute-link{
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+}
+
+.btn-link{
+  padding:5px 15px 5px 15px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  border-radius:10px;
+  margin-bottom: 23px;
+}
+
+.btn-link:hover{
+  background-color:#ADD8E6;
+}
+
+.footer-text{
+  font-style: italic;
+  font-size: 15px;
+  text-align: center;
+  margin:20px 0px 20px 0px;
+}
+a:link{
+  text-decoration: none;
+}
