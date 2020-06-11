@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FCC: Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1 id="title">Online Music Classes</h1>
+			<p id="description">Register for online music classes<br>Price: $50 per hour<br> Limited slots! Register now!</p>
+		</div>
+
+		<form id="survey-form">
+			<div class="contact-info">
+				<label for="name" id="name-label">Name</label>
+				<input type="text" id="name" name="name" placeholder="Username" minlength="6" maxlength="10">
+
+				<label for="email" id="email-label">Email</label>
+				<input type="email" id="email" name="email" placeholder="Email">
+
+				<label for="number" id="number-label">Phone Number</label>
+				<input type="number" id="number" name="number" placeholder="Phone number">
+			</div>
+
+			<div class="session-info">
+				<label for="dropdown">Choose an instrument</label>
+				<select id="dropdown">
+					<option value="Guitar">Guitar</option>
+					<option value="Drumset">Drumset</option>
+					<option value="Violin">Violin</option>
+					<option value="Cello">Cello</option>
+					<option value="Piano">Piano</option>
+				</select>
+
+				<p id="free-day">Select days for classes</p>
+				<label for="days">Monday</label>
+				<input type="checkbox" id="days" value="Monday" name="day">
+				<label for="days">Tuesday</label>
+				<input type="checkbox" id="days" value="Tuesday" name="day">
+				<label for="days">Wednesday</label>
+				<input type="checkbox" id="days" value="Wednesday" name="day">
+				<label for="days">Thursday</label>
+				<input type="checkbox" id="days" value="Thursday" name="day">
+				<label for="days">Friday</label>
+				<input type="checkbox" id="days" value="Friday" name="day">
+				<label for="days">Saturday</label>
+				<input type="checkbox" id="days" value="Saturday" name="day">
+
+				<p id="stable">Do you have stable internet connection?</p>
+				<label for="stable-net">Yes</label>
+				<input type="radio" id="stable-net" name="internet">
+				<label for="stable-net">No</label>
+				<input type="radio" id="stable-net" name="internet">
+
+				<p>Choose time of day</p>
+				<label for="time">10 am - 12 noon</label>
+				<input type="radio" id="time" name="early-late">
+				<label for="time">5pm - 7pm</label>
+				<input type="radio" id="time" name="early-late">
+			</div>
+
+			<label for="info-text">Comments</label>
+			<textarea id="info-text" name="info-text" rows="5" cols="40"></textarea>
+
+			<button id="submit">Submit</button>
+		</form>
+	</div>
+</body>
+</html>
