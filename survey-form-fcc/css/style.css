@@ -1,28 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
 body{
-	background-image: url("https://cdn.pixabay.com/photo/2019/09/20/05/57/music-instruments-4490883_960_720.png");
-	max-width: 100%;
-	height:auto;
+	
+	background-image: url("https://cdn.pixabay.com/photo/2015/06/02/00/46/music-794506_960_720.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	font-family: 'Crimson Text', serif;
+	font-size: 22px;
+	line-height: 1.5;
+	color:rgba(0, 0, 0, 0.9);
+	margin: 0;
+	padding:0;
 }
 
-/*.container{
-	position: relative;
-	background: #5C97FF;
-	overflow: hidden;
+h1{
+	font-size: 30px;
 }
 
-.container:before {
-	content:'';
-	display:block;
-	position: absolute;
-	left:0;
-	top:0;
-	max-width: 100%
-	height:auto;
-	z-index:1;
-	opacity: 0.6;
-	background-image: url("https://cdn.pixabay.com/photo/2015/01/27/08/24/music-613554_960_720.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-}*/
+/* CONTAINER*/
+#container{
+	margin:50px 0px 50px 0px;
+}
+
+/* survey form */
+#survey-form{
+	background:rgba(0, 0, 0, 0.4);
+	border: 1px solid #555;
+	border-radius: 7px;
+	width: 500px;
+	height: auto;
+	margin: 0 auto;
+	padding: 0px 0px 20px 36px;
+}
+
+/* contact info*/
+.contact-info{
+	margin-top: 20px;
+}
+
+#name, #email, #number{
+	margin-bottom: 20px;
+}
+
+/* 	SESSION INFO*/
+.session-info{
+	margin-top: 20px;
+}
+
+/* instrument */
+.instrument{
+	margin-bottom: 27px;
+}
+
+/* free day*/
+.free-day{
+	margin-bottom: 23px;
+}
+
+.week{
+	margin-left: 10px;
+}
+
+/* Available for sessions */
+.timeline{
+	margin-bottom: 23px;
+}
+
+.available{
+	margin-left: 10px;
+}
+
+/* stable internet */
+.stable{
+	margin-bottom: 20px;
+}
+
+.no{
+	margin-left: 10px;
+}
+
+/* COMMENT BOX */
+#info-text{
+	margin: 10px 0px 25px 0px;
+	border-radius: 10px;
+	font-size:14px;
+}
+
+.comment{
+	margin-top: 20px;
+}
+
+/* submit button */
+#submit{
+	margin-left: 5px;
+	padding: 5px 10px 5px 10px;
+	border-radius: 5px;
+}
+
+/* hr tag */
+hr{
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 1em 0;
+    padding: 0;
+}

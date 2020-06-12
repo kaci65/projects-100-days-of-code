@@ -6,66 +6,83 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<div class="header">
-			<h1 id="title">Online Music Classes</h1>
-			<p id="description">Register for online music classes<br>Price: $50 per hour<br> Limited slots! Register now!</p>
-		</div>
-
+	<div id="container">
 		<form id="survey-form">
-			<div class="contact-info">
-				<label for="name" id="name-label">Name</label>
-				<input type="text" id="name" name="name" placeholder="Username" minlength="6" maxlength="10">
-
-				<label for="email" id="email-label">Email</label>
-				<input type="email" id="email" name="email" placeholder="Email">
-
-				<label for="number" id="number-label">Phone Number</label>
-				<input type="number" id="number" name="number" placeholder="Phone number">
+			<div class="header">
+				<h1 id="title">Online Music Classes</h1>
+				<p id="description">Register for online music classes<br>Price: $50 per hour<br> Limited slots! Register now!</p>
 			</div>
+			<hr>
+
+			<div class="contact-info">
+				<label for="name" class="contact" id="name-label">Name</label><br>
+				<input type="text" id="name" name="name" placeholder="Name" minlength="6" maxlength="20" required><br>
+
+				<label for="email" class="contact" id="email-label">Email</label><br>
+				<input type="email" id="email" name="email" placeholder="Email" required><br>
+
+				<label for="number" class="contact" id="number-label">Phone Number</label><br>
+				<input type="number" id="number" name="number" placeholder="Phone number" min="13" max="20" required>
+			</div>
+			<hr>
 
 			<div class="session-info">
-				<label for="dropdown">Choose an instrument</label>
-				<select id="dropdown">
-					<option value="Guitar">Guitar</option>
-					<option value="Drumset">Drumset</option>
-					<option value="Violin">Violin</option>
-					<option value="Cello">Cello</option>
-					<option value="Piano">Piano</option>
-				</select>
+				<div class="instrument">
+					<label for="dropdown">Pick an instrument:</label>
+					<select id="dropdown">
+						<option value="Select">Select</option>
+						<option value="Guitar">Guitar</option>
+						<option value="Drumset">Drumset</option>
+						<option value="Violin">Violin</option>
+						<option value="Cello">Cello</option>
+						<option value="Piano">Piano</option>
+					</select>
+				</div>
 
-				<p id="free-day">Select days for classes</p>
-				<label for="days">Monday</label>
-				<input type="checkbox" id="days" value="Monday" name="day">
-				<label for="days">Tuesday</label>
-				<input type="checkbox" id="days" value="Tuesday" name="day">
-				<label for="days">Wednesday</label>
-				<input type="checkbox" id="days" value="Wednesday" name="day">
-				<label for="days">Thursday</label>
-				<input type="checkbox" id="days" value="Thursday" name="day">
-				<label for="days">Friday</label>
-				<input type="checkbox" id="days" value="Friday" name="day">
-				<label for="days">Saturday</label>
-				<input type="checkbox" id="days" value="Saturday" name="day">
+				<div class="free-day">
+					<p>Select days for classes:</p>
+					<input type="checkbox" id="days" value="Monday" name="day">
+					<label for="days" class="week">Monday</label><br>
+					<input type="checkbox" id="days" value="Tuesday" name="day">
+					<label for="days" class="week">Tuesday</label><br>
+					<input type="checkbox" id="days" value="Wednesday" name="day">
+					<label for="days" class="week">Wednesday</label><br>
+					<input type="checkbox" id="days" value="Thursday" name="day">
+					<label for="days" class="week">Thursday</label><br>
+					<input type="checkbox" id="days" value="Friday" name="day">
+					<label for="days" class="week">Friday</label><br>
+					<input type="checkbox" id="days" value="Saturday" name="day">
+					<label for="days" class="week">Saturday</label>
+				</div>
 
-				<p id="stable">Do you have stable internet connection?</p>
-				<label for="stable-net">Yes</label>
-				<input type="radio" id="stable-net" name="internet">
-				<label for="stable-net">No</label>
-				<input type="radio" id="stable-net" name="internet">
+				<div class="timeline">
+					<p>Preffered time:</p>
+					<input type="radio" id="time" name="early-late" value="time">
+					<label for="time" class="available">10 am - 12 noon</label> <br>
+					<input type="radio" id="time" name="early-late" value="time">
+					<label for="time" class="available">5 pm - 7 pm</label>
+				</div>
 
-				<p>Choose time of day</p>
-				<label for="time">10 am - 12 noon</label>
-				<input type="radio" id="time" name="early-late">
-				<label for="time">5pm - 7pm</label>
-				<input type="radio" id="time" name="early-late">
+				<div class="stable">
+					<p>Do you have stable internet connection?</p>
+					<label for="stable-net" class="yes">Yes</label>
+					<input type="radio" id="stable-net" name="internet" value="yesNo">
+					<label for="stable-net" class="no">No</label>
+					<input type="radio" id="stable-net" name="internet" value="yesNo">
+				</div>
 			</div>
+			<hr>
 
-			<label for="info-text">Comments</label>
-			<textarea id="info-text" name="info-text" rows="5" cols="40"></textarea>
+			<div class="comment">
+				<label for="info-text">Questions/Comments:</label><br>
+				<textarea id="info-text" name="info-text" rows="5" cols="40"></textarea><br>
+			</div>
 
 			<button id="submit">Submit</button>
 		</form>
 	</div>
+
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 </body>
 </html>
