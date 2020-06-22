@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
+
+body{
+  margin:0;
+  padding-top:150px;
+  width:100%;
+  height:auto;
+  background-color:#f6f1f4;
+  color:#333333;
+  font-family: 'BioRhyme', serif;
+}
+
+p{
+  line-height: 1.6;
+  font-size:16px;
+}
+
+/* HEADER */
+#header{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:auto;
+  z-index: 1;
+  background-color:#f6f1f4;
+}
+
+nav{
+  /*text-align: center;*/
+}
+
+#nav-bar{
+  overflow: hidden; 
+  text-align: center;
+}
+
+#header-image{
+  display:inline-block;
+  position:relative;
+  top:0;
+  width:100%;
+  height:auto;
+}
+
+#header-img{
+  max-width:50%;
+  height:50px;
+  float:left;
+}
+
+
+ul{
+  margin:0;
+  padding:0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+ul li{
+  float:right;
+  margin-top:17px;
+}
+
+.nav-link{
+  /*float:right;*/
+  font-size:16.5px;
+  font-weight: bold;
+  padding:14px 10px;
+  margin-top:5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding:10px;
+
+}
+
+/*a:link{
+  text-decoration: none;
+  text-transform: uppercase;
+  padding:10px;
+
+}
+*/
+a{
+  color:inherit;
+}
+
+a:link:hover{
+  background-color:#B0E0E6;
+  border:1px solid #ddd;
+  border-radius:10px;
+}
+
+a:visited{
+  color:#112222;
+}
+
+a:active{
+  color:#112222;
+}
+
+
+/* HOME */
+#home{
+  /*width:100%;*/
+  height:auto;
+  margin-top:0px;
+  /*background-color: blue;*/
+}
+
+#home p{
+  text-align: center;
+  padding:100px 0 25px 0;
+}
+
+/* PRODUCTS */
+#products{
+  margin-top:35px;
+}
+
+.title-products{
+  text-align:center;
+  font-size:25px;
+  text-transform: uppercase;
+}
+
+.img-cards{
+  display:flex;
+  flex-direction: row;
+  flex-flow:wrap;
+  justify-content: center;
+}
+
+img{
+  max-width:24.99999%;
+  height:auto;
+  margin:10px;
+  border:1px solid #ddd;
+  border-radius:4px;
+  padding:5px;
+}
+
+/* WORKSHOP */
+#workshop{
+  margin-top:60px;
+}
+
+.text-workshop{
+  text-align: center;
+  font-style: italic;
+  color:#463d3e;
+}
+
+.title-workshop{
+  text-align:center;
+  font-size:25px;
+  text-transform: uppercase;
+}
+
+#video{
+  display: block;
+  margin:-20px auto 35px auto;
+}
+
+/* QUOTATION */
+#quotation{
+  margin-top:60px;
+  margin-bottom:40px;
+  text-align:left;
+  padding-left:20px;
+}
+
+#quotation p{
+  font-size: 20px;
+}
+
+input{
+  font-size:18px;
+  margin-right:14px;
+}
+
+select{
+  font-size:18px;
+  color:#696969;
+  margin-right:17px;
+}
+
+#submit{
+  font-size:16px;
+  background-color:#89CFF0;
+  border-radius:10px;
+  padding:10px 34px;
+}
+
+#submit:hover{
+  background-color:#d8bfd8;
+}
+
+/* COPYRIGHT */
+#footer{
+ text-align:center;
+}
+.copyright{
+  font-size:13px;
+  color:#696969;
+  padding-top:5px;
+}
+
+.text-logo{
+  font-size:13px;
+  color:#696969;
+  margin-top: -10px;
+}
+
+/* HR TAG */
+hr{
+  display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/* MEDIA QUERY NAVBAR*/
+@media screen and (max-width:400px){
+  .nav-link{
+    text-align:center;
+    float:none;
+  }
+}
+
+/* MEDIA QUERY BODY*/
+@media only screen and (max-width:700px){
+  #products {
+    width:49.99999%;
+    margin:6px 0;
+  }
+}
+
+@media only screen and (max-width:500px){
+  #products {
+    width:100%;
+  }
+}
+
+/* MEDIA QUERY IMAGES*/
+@media screen and (max-width:400px) {
+  .img-cards{
+    flex-direction:column;
+  }
+}
