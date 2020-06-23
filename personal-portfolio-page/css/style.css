@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@700&display=swap');
+
+body{
+	margin:0;
+	padding:0;
+	font-family: 'BioRhyme', serif;
+	color:#fff;
+	background-color: #000000;
+	letter-spacing:2px;
+}
+
+/* NAVBAR */
+nav{
+	position:fixed;
+	top:0;
+	width:100%;
+	height:15vh;
+	background-color:#000;
+	z-index: 1;
+}
+
+.nav-list{
+	padding-top:15px;
+	list-style-type: none;
+}
+
+.nav-list-item{
+	display:inline-block;
+	float:right;
+	margin-right: 45px;
+}
+
+.nav-link{
+	text-decoration: none;
+	font-size: 16px;
+	color:#fff;
+}
+
+.nav-link:hover{
+	color:#fff;
+}
+
+/* WELCOME_SECTION*/
+#welcome-section{
+	padding-top:60px;
+	width:100%;
+	height:100vh;
+}
+
+.welcome-info{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+
+.title-welcome, .text-welcome{
+	text-align: center;
+	text-transform:uppercase;
+}
+
+.title-welcome{
+	font-size:30px;
+	color:#fff;
+}
+
+.text-welcome{
+	font-size: 35px;
+	color:#E09540;
+	font-weight: bolder;
+	text-transform:uppercase;
+}
+
+/* PROJECTS */
+#projects{
+	padding-top:80px;
+}
+
+.projects-title{
+	font-size: 30px;
+	text-align: center;
+	text-transform:uppercase;
+	text-decoration:underline solid	#D99058 5px;
+}
+
+.project-tile{
+	display:inline-block;
+	margin-left:auto;
+	margin-right: auto;
+	margin-right:-5px;
+}
+
+.project-tile-left{
+	margin-left:110px;
+}
+
+.project-img{
+	width:350px;
+	border:1px solid #ddd;
+	border-radius:4px;
+	padding:2px;
+}
+
+.proj-link{
+	text-decoration: none;
+	text-transform:uppercase;
+	color:#DCDCDC;
+	font-size:15px;
+}
+
+.proj-link-text{
+	text-align: center;
+}
+
+/* PROFILE */
+#profile-link{
+	padding-top: 80px;
+}
+
+.profile-title{
+	font-size: 25px;
+	text-align: center;
+	text-transform:uppercase;
+	text-decoration:underline solid	#D99058 4px;
+}
+
+.prof-links{
+	text-align: center;
+	font-size:18px;
+	margin-top:25px;
+}
+
+.prof-links a{
+	text-decoration: none;
+	text-align: center;
+	margin-right:45px;
+	color:#fff;
+}
+
+/*CONTACTS*/
+#contacts{
+	margin-top: 60px;
+}
+
+.contact-title{
+	font-size: 25px;
+	text-align: center;
+	text-transform:uppercase;
+	text-decoration:underline solid	#D99058 4px;
+}
+
+.contact-links{
+	text-align: center;
+	font-size:18px;
+	margin-top:25px;
+}
+
+.contact-links a{
+	text-decoration: none;
+	text-align: center;
+	margin-right:45px;
+}
+
+/* FOOTER */
+footer{
+	background-color: #16161d;
+	height:60px;
+}
+
+/* MEDIA QUERIES */
+/*@media screen and (max-width: 420px) {
+  #nav-list a{
+    display:block;
+    float:none;
+    width: 30%;
+  }
+}*/
