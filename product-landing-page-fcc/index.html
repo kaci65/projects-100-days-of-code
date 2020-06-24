@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FCC: Product Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+
+		<!-- HEADER -->
+		<header id="header">
+			<nav id="nav-bar">
+					<a href="https://cooltext.com"><img id="header-img" src="https://images.cooltext.com/5432845.png" width="431" height="104" alt="Rosie's Deco" class="header-image"/></a>
+				
+				<ul class="nav-list">
+					<li><a class="nav-link"href="#home">Home</a></li>
+					<li><a class="nav-link"href="#products">Products</a></li>
+					<li><a class="nav-link"href="#workshop">At work</a></li>
+				</ul>
+			</nav>
+			<a class="btn-quote" href="#quotation"><button>Quotation</button></a>
+		</header>
+		<hr>
+
+		<!-- HOME -->
+		<section id="home">
+			<p>Planning any kind of party? Wedding? Birthday? Engagement? Graduation? Don't worry we've got you.<br> Here at Rosie's, we pride ourselves in providing you with the best flower arrangements for your events!</p>
+		</section>
+
+		<!-- PRODUCTS -->
+		<section id="products">
+			<h3 class="title-products">Products</h3>
+			<div class="img-cards">
+				<img src="https://cdn.pixabay.com/photo/2016/05/27/22/25/roses-1420719_960_720.jpg">
+				<img src="https://cdn.pixabay.com/photo/2017/08/31/11/55/wedding-2700495_960_720.jpg">
+				<img src="https://cdn.pixabay.com/photo/2016/11/23/17/55/beach-1854072_960_720.jpg">
+				<img src="https://cdn.pixabay.com/photo/2017/03/13/06/02/bouquet-2138837_960_720.jpg">
+				<img src="https://cdn.pixabay.com/photo/2015/03/26/10/43/bouquet-691862_960_720.jpg">
+				<img src="https://cdn.pixabay.com/photo/2014/02/07/11/31/flowers-260894_960_720.jpg">
+				<img src="https://cdn.pixabay.com/photo/2016/11/21/15/58/aisle-1846114_960_720.jpg">
+				<img src="https://cdn.pixabay.com/photo/2016/03/09/09/30/flowers-1245820_960_720.jpg">
+				<img src="https://cdn.pixabay.com/photo/2013/07/30/12/25/marriage-168831_960_720.jpg">
+			</div>
+		</section>
+
+		<!-- WORKSHOP -->
+		<section id="workshop">
+			<h3 class="title-workshop">How we do it</h3>
+			<video id="video" width="320" height="240" controls>
+				<source src="https://player.vimeo.com/external/393660119.sd.mp4?s=8748d33c8ac11e3f2a344e7a4fc6fbd1b7207f15&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+			</video>
+			<p class="text-workshop">At Rosie's, we ensure that your dream event comes to life.</p>
+		</section>
+
+		<!-- QUOTATION -->
+		<section id="quotation">
+			<p>Need a quotation?</p>
+			<form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
+				<input type="text" id="name" name="name" placeholder="Full name">
+				<input type="email" id="email" name="email" placeholder="Email address">
+
+				<select id="dropdown">
+					<option value="Select Event">Select Event</option>
+					<option value="Birthday">Birthday</option>
+					<option value="Engagement">Engagement</option>
+					<option value="Wedding">Wedding</option>
+					<option value="Graduation">Graduation</option>
+				</select>
+
+				<input type="submit" id="submit" value="Submit">
+			</form>
+		</section>
+
+		<hr>
+
+		<section id="footer">
+			<p class="copyright">The images used in this page have been sourced from <a class="footer-links" href="https://www.pixabay.com/" target="_blank">Pixabay, </a>the video is by Lina Fresco from <a class="footer-links" href="https://www.pexels.com/video/woman-wiring-flowers-for-decoration-3805774/" target="_blank">Pexels</a></p>
+			<br/><p class="text-logo">Logo image by <a class="footer-links" href="https://cooltext.com"> Cool Text: Free Graphics Generator</a> - <a class="footer-links" href="https://cooltext.com/Edit-Logo?LogoID=-3571224126">Edit Image</a></p>
+
+		</section>
+
+	</div>
+
+	<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
