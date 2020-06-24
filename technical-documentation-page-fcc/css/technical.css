@@ -1,0 +1,88 @@
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 16em;
+    height: 100vh;
+}
+
+.nav-item {
+    margin-top: 0.5em;
+    border-top: 1px solid #000;
+    padding-top: 0.5em;
+    margin-left: -23px;
+    text-align: left;
+    list-style-type: none;
+    color: #011F5B;
+    /* text-align: left; */
+}
+
+.nav-item:hover {
+  opacity: 0.7;
+}
+
+a:link {
+  text-decoration: none ;
+}
+
+.container {
+    max-width: 65%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#main-doc {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+}
+
+
+#heading-main {
+    font-size: 110%;
+    margin-top: 2em;
+    margin-left: 7px;
+    color: #1B1B1B;
+}
+
+.headings {
+    font-size: 130%;
+    margin: 1em 0;
+    color: #353839;
+}
+
+.headings {
+    margin: 1em 0;
+}
+
+p {
+    line-height: 1.2em;
+    /* margin-top: 1em; */
+}
+
+.content-points {
+    list-style-type: none;
+}
+
+p,
+.content-points {
+    color: #000000;
+    margin-top: 1em;
+}
+
+#scrabblepages {
+   color: #4d4da1;
+}
+
+#navbar {
+    width: 12%;
+}
+
+#main-doc {
+    width: 60em;
+    margin: 0 auto;
+}
+
+.main-section {
+    font-size: 90%;
+}
