@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+}
+
+html, body{
+	height:100%;
+ 	font-family: 'Titillium Web', sans-serif;
+  	line-height: 1.6;
+ 	color:#282C35;
+}
+
+p{
+	font-size: 18px;
+}
+
+h2{
+	font-size: 24px;
+	color:;
+}
+
+h1{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+
+	text-align:center;
+	color:#fff;
+	font-size:34px;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+/* IMAGES */
+.image-1{
+	background-image:url("https://cdn.pixabay.com/photo/2013/06/12/22/20/zion-park-139012_960_720.jpg");
+	min-height:150vh;
+}
+
+.image-2{
+	background-image:url("https://cdn.pixabay.com/photo/2016/09/04/20/09/mountains-1645078_960_720.jpg");
+	height:100vh;
+}
+
+.image-3{
+	background-image:url("https://cdn.pixabay.com/photo/2017/05/09/03/46/alberta-2297204_960_720.jpg");
+	height:100vh;
+}
+
+.image-4{
+	background-image:url("https://cdn.pixabay.com/photo/2016/08/11/23/48/italy-1587287_960_720.jpg");
+	min-height:140vh;
+}
+
+.all-images{
+	position:relative;
+	background-position: center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+}
+
+.textTopics{
+	letter-spacing: 2px;
+}
+
+.topicQuote{
+	font-style:italic;
+}
+
+.section-text{
+	text-align: center;
+	background-color:rgba(204, 204, 255, 0.5);
+	padding:18px 0px 20px 0px;
+}
