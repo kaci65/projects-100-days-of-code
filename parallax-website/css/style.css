@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+body{
+ 	margin:0;
+ 	padding:0;
+ 	font-family: 'Titillium Web', sans-serif;
+  	line-height: 1.6;
+ 	color:#282C35;
+}
+
+p{
+	font-size: 18px;
+}
+
+h2{
+	font-size: 24px;
+	color:;
+}
+
+h1{
+	color:#fff;
+	font-size:31px;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+/* IMAGES */
+
+.all-sections{
+	position:relative;
+}
+
+.all-images{
+	position:relative;
+	width:100%;
+	background-position:center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	filter: blur(1px);
+}
+
+.textTopics{
+	letter-spacing: 3px;
+}
+
+.text{
+	/*position: fixed;
+	z-index: 2;*/
+}
+
+/* SECTION 1 */
+.textOne h1{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	border:1px solid #000;
+	background-color: black;
+	padding:7px 13px;
+}
+
+.textOne{
+	text-align: center;
+	background-color: #CCCCFF;
+	margin-top:-23px;
+	padding:18px 0px 5px 0px;
+}
+/* SECTION 2 */
+.textTwo{
+	text-align: center;
+	background-color: #CCCCFF;
+	margin-top:-23px;
+	padding:18px 0px 5px 0px;
+}
+
+.textTwo h1{
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	font-style: italic;
+}
+
+/* SECTION THREE */
+
+.textThree{
+	text-align: center;
+	background-color: #CCCCFF;
+	margin-top:-23px;
+	padding:18px 0px 5px 0px;
+}
+
+.textThree h1{
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	/*z-index:2;*/
+	font-style: italic;
+}
+
+/* SECTION FOUR */
+.textFour h1{
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	border:1px solid #000;
+	background-color: black;
+	padding:7px 13px;
+}
