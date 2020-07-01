@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: 'BioRhyme', serif;
+}
+
+p{
+	font-size:;
+}
+
+/* LOGO */
+.logo{
+	width:100%;
+	height:50px;
+}
+.text-logo{
+	text-align: center;
+	padding:10px 0px 10px 0px;
+	background-color:#fff;
+	font-family: 'Lobster', cursive;
+	font-size:30px;
+}
+
+hr{
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* NAV */
+.header{
+	width:100%;
+	height:50px;
+	background-color: #fff;
+}
+.nav-list{
+	display:inline-flex;
+	list-style-type: none;
+	margin-left:420px;
+
+}
+.nav-item{
+	justify-content: center;
+	padding:15px 40px 10px 0px;
+}
+
+.nav-link{
+	font-size:17px;
+	text-decoration:none;
+}
+
+.container{
+	margin-top:-65px;
+}
+
+
+.landing-image{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.pixabay.com/photo/2013/11/20/09/28/christmas-213645_960_720.jpg");
+	opacity:0.7;
+	width:100%;
+	height: 150vh;
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+.about-image{
+}
+
+#about{
+	margin-right:400px;
+}
+.imageAbout{
+	background-image: url("https://cdn.pixabay.com/photo/2016/08/12/16/01/table-1589012_960_720.jpg");
+}
