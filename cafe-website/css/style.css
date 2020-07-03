@@ -8,9 +8,20 @@
 
 body{
 	font-family: 'BioRhyme', serif;
-	line-height: 1.6em;
+	line-height: 1.8em;
 	margin: 0;
 	min-height: 100vh;
+}
+
+h1{
+	text-align:center;
+	color:#344055;
+
+}
+
+h4{
+	font-style: italic;
+	color:#16161d;
 }
 
 
@@ -93,7 +104,6 @@ a {
 
 .about-info{
 	text-align:left;
-	/*overflow:hidden;*/
 	padding:30px;
 }
 
@@ -102,101 +112,141 @@ a {
 	height:100vh;
 }
 
-.about-info h1{
-	text-align:center;
-	font-size:20px;
-	color:#344055;
-	padding-bottom: 15px;
-	/*font-family:'Old Standard TT', serif;
-*/}
-
-
 .about-info p{
+	padding-top: 15px;
 	text-align:center;
-	/*font-family:'Farsan', cursive;*/
 	font-size:17px;
-	color:#7d7d7d;
+	color:#2a4041;
 }
 
 
 /* PRODUCTS */
 #products{
 	padding-top:320px;
+	width:100vw;
 	height:100vh;
-	max-width:100vw;
-	/*background-image: url("https://cdn.pixabay.com/photo/2014/11/05/12/08/chalkboard-517818_960_720.jpg");
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;*/
 }
 
 #products h1{
-	text-align:center;
-	font-size:20px;
-	color:#344055;
 	padding-bottom: 15px;
 }
 
 .product-images{
-	display:flex;
-	flex-direction:row;
-	flex-flow:wrap;
+	margin:20px 60px 0px 60px;
+	display:grid;
+	grid-template-columns:repeat(4, 1fr);
+	grid-template-rows: repeat(3, 15vw);
+	grid-gap:5px;
 	justify-content:center;
 }
 
 .baked-img{
-	max-width:12.55555%;
-	height:auto;
-	/*border:0.5px solid #ddd;
-  	border-radius:4px;*/
-}
-
-/*#about{
-	height:100vh;
-	width:100vw;
-	overflow:hidden;
-	border:1px solid red;
-}
-*/
-/*.about-info{
-	position:relative;
-	text-align:left;
-	overflow:hidden;
-	padding:30px;
+	width:100%;
 	height:100%;
-	float:left;
-	width:40%;
+	object-fit:cover;
 }
 
-.about-info h1{
-	display:inline-block;
-	position: relative;
-	margin:0;
-	font-size:20px;
-	color:#344055;
-	font-family:'Old Standard TT', serif;
-}
 
-.about-info p{
+/* EVENTS & LOCATION */
+.event-info, .location-info{
 	text-align:center;
-	font-family:'Farsan', cursive;
+	padding:35px 80px;
+	/*color:#16161d;
+	color:#7d7d7d;*/
+	color:#2a4041;
+
+}
+
+.event-info p, .location-info p{
+	padding-top:15px;
 	font-size:17px;
-	color:#7d7d7d;
 }
 
-.aboutImage{
-	display:inline-block;
-	position:relative;
-	overflow:auto;
-	height:100%;
-	float:right;
+#events, #location{
+	width:100vw;
+	height:50vh;
+}
+
+
+/* BUTTON: EVENTS */
+.btn-event{
+	margin-top:30px;
+	font-size:17px;
+	cursor:pointer;
+	background-color: #63a4ff;
+	background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+	border: none;
+	border-radius:5px;
+	padding:8px 12px;
+}
+
+.btn-event:hover{
+	background-color: #abe9cd;
+	background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+	color:#fff;
+	font-weight:bold;
+}
+
+
+/* REVIEWS */
+.reviews{
+	margin-top:60px;
+	width:100vw;
+}
+
+.review-cards{
+	width:80vw;
+	margin:20px 10px 0px 10px;
+	display:grid;
+	grid-template-columns:repeat(4, 1fr);
+	grid-gap:25px;
+	text-align: left;
+	margin-left:120px;
+	padding-top:15px;
+}
+
+.review-cards p{
+	font-size:14px;
+	color:#36454f;
+}
+
+/* FOOTER */
+footer{
+	margin-top:50px;
+	width:100vw;
+	background-color: #5E5E5E;
+	height:60px;
+}
+
+/* HR ELEMENT */
+hr{
 	width:60%;
+	margin:auto;
+	border:3px solid;
+	border-image: linear-gradient(315deg, #d19592 0%, #c81f70 74%) 1;
+	border-radius: 5px;
 }
 
-.about-img{
-	float:right;
+.events-hr{
+	margin-top:200px;
 }
-*/
+
+.location-hr{
+	width:50%;
+}
+
+.review-hr{
+	margin-top:30px;
+}
+
+/* PRODUCT RATING */
+.rating-star {
+	display: inline-block;
+	margin-left: 0.5em;
+	color: gold;
+	width: 50%;
+}
+
 
 /* MEDIA QUERIES NAVBAR */
 @media (min-width: 769px) {
@@ -222,3 +272,32 @@ a {
 		justify-content: space-between;
 	}
 }
+
+
+/* EVENT LOCATION */
+@media (max-width:600px) {
+	.event-info,
+	.location-info{
+		width:100vw;
+		height:70vh;
+	}
+	p{
+		font-size:15px;
+	}
+}
+
+
+/* PRODUCT IMAGES */
+/*@media screen and (max-width: 800px) {
+	#products,
+	.product-images {
+		width: 50%;
+	}
+}*/
+
+/*@media screen and (max-width: 500px) {
+	#products,
+	.product-images {
+		width: 100%;
+	}
+}*/
