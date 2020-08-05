@@ -35,6 +35,24 @@ body{
   margin-bottom: 30px;
 }
 
+.wrapper{
+padding-left: 15px;
+padding-right: 15px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+[class*="col-span"] {
+float: left;
+box-sizing: border-box;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+.sm-col-span-4{
+width: 100%;
+}
+
 .info{
   text-align: left;
   word-wrap: break-word;
@@ -42,11 +60,11 @@ body{
   word-break: break-all;
   overflow:hidden;
   font-size:14.5px;
-  padding: 0px 30px;
+  /* padding: 0px 30px; */
 }
 
 #tribute-info{
-  margin: 0px 5px;
+  /* margin: 0px 5px; */
 }
 
 #tribute-link{
@@ -78,6 +96,15 @@ a:link{
 
 /* media queries */
 /* info */
+@media screen and (min-width: 768px){
+  .lg-col-span-4{
+    width:100%;
+  }
+
+  .info{
+    padding-bottom:15px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width:992px){
   .info{
     text-align:center;
