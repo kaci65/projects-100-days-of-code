@@ -80,7 +80,7 @@ li, a{
   max-width:49.99999%;
   height:auto;
 }
-button{
+.btn-quote{
   padding:9px 25px;
   background-color:rgba(0, 136, 169, 1);
   border:none;
@@ -159,12 +159,12 @@ img{
 #quotation{
   margin-top:60px;
   margin-bottom:40px;
-  text-align:left;
-  padding-left:20px;
+  text-align:center;
 }
 
 #quotation p{
   font-size: 20px;
+  padding-bottom:20px;
 }
 
 input{
@@ -179,10 +179,12 @@ select{
 }
 
 #submit{
-  font-size:16px;
-  background-color:#89CFF0;
-  border-radius:10px;
-  padding:10px 34px;
+  padding:9px 25px;
+  background-color:rgba(0, 136, 169, 1);
+  border:none;
+  border-radius: 50px;
+  cursor:pointer;
+  margin-top:25px;
 }
 
 #submit:hover{
@@ -220,10 +222,19 @@ hr{
 
 
 /* MEDIA QUERY NAVBAR*/
-@media screen and (max-width:400px){
+@media screen and (min-width:400px){
   .nav-link{
     text-align:center;
     float:none;
+  }
+}
+
+@media screen and (min-width:400px)and (max-width:800px){
+   #name, #email, #dropdown{
+     margin-top:14px;
+  }
+  #submit{
+    margin-top:20px;
   }
 }
 
